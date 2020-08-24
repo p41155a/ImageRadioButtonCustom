@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2092DC5CB109C2A7743694E /* Pods_ImageRadioButtonCustom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87B17F252491C683D5215A1 /* Pods_ImageRadioButtonCustom.framework */; };
 		FF60288224DD3EAC00567084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF60288124DD3EAC00567084 /* AppDelegate.swift */; };
 		FF60288424DD3EAC00567084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF60288324DD3EAC00567084 /* SceneDelegate.swift */; };
 		FF60288624DD3EAC00567084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF60288524DD3EAC00567084 /* ViewController.swift */; };
 		FF60288924DD3EAC00567084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF60288724DD3EAC00567084 /* Main.storyboard */; };
 		FF60288B24DD3EAE00567084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF60288A24DD3EAE00567084 /* Assets.xcassets */; };
 		FF60288E24DD3EAE00567084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF60288C24DD3EAE00567084 /* LaunchScreen.storyboard */; };
+		FF60289624DD495D00567084 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF60289524DD495D00567084 /* RadioButton.swift */; };
+		FF60289824DD4A0300567084 /* VerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF60289724DD4A0300567084 /* VerticalAlignLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D76662938CA30C9167BFED4 /* Pods-ImageRadioButtonCustom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageRadioButtonCustom.release.xcconfig"; path = "Target Support Files/Pods-ImageRadioButtonCustom/Pods-ImageRadioButtonCustom.release.xcconfig"; sourceTree = "<group>"; };
+		B1F7811063FAE4A368808D3B /* Pods-ImageRadioButtonCustom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageRadioButtonCustom.debug.xcconfig"; path = "Target Support Files/Pods-ImageRadioButtonCustom/Pods-ImageRadioButtonCustom.debug.xcconfig"; sourceTree = "<group>"; };
+		D87B17F252491C683D5215A1 /* Pods_ImageRadioButtonCustom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageRadioButtonCustom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF60287E24DD3EAC00567084 /* ImageRadioButtonCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageRadioButtonCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF60288124DD3EAC00567084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF60288324DD3EAC00567084 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		FF60288A24DD3EAE00567084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF60288D24DD3EAE00567084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF60288F24DD3EAE00567084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF60289524DD495D00567084 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		FF60289724DD4A0300567084 /* VerticalAlignLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2092DC5CB109C2A7743694E /* Pods_ImageRadioButtonCustom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29BD0BCA085ED550788D6740 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1F7811063FAE4A368808D3B /* Pods-ImageRadioButtonCustom.debug.xcconfig */,
+				4D76662938CA30C9167BFED4 /* Pods-ImageRadioButtonCustom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC963BA34D9F31969EDA226B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D87B17F252491C683D5215A1 /* Pods_ImageRadioButtonCustom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF60287524DD3EAC00567084 = {
 			isa = PBXGroup;
 			children = (
 				FF60288024DD3EAC00567084 /* ImageRadioButtonCustom */,
 				FF60287F24DD3EAC00567084 /* Products */,
+				29BD0BCA085ED550788D6740 /* Pods */,
+				FC963BA34D9F31969EDA226B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +91,8 @@
 				FF60288A24DD3EAE00567084 /* Assets.xcassets */,
 				FF60288C24DD3EAE00567084 /* LaunchScreen.storyboard */,
 				FF60288F24DD3EAE00567084 /* Info.plist */,
+				FF60289524DD495D00567084 /* RadioButton.swift */,
+				FF60289724DD4A0300567084 /* VerticalAlignLabel.swift */,
 			);
 			path = ImageRadioButtonCustom;
 			sourceTree = "<group>";
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF60289224DD3EAE00567084 /* Build configuration list for PBXNativeTarget "ImageRadioButtonCustom" */;
 			buildPhases = (
+				92A48599656545419B504227 /* [CP] Check Pods Manifest.lock */,
 				FF60287A24DD3EAC00567084 /* Sources */,
 				FF60287B24DD3EAC00567084 /* Frameworks */,
 				FF60287C24DD3EAC00567084 /* Resources */,
+				516473465B83668AF0FE51B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +165,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		516473465B83668AF0FE51B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageRadioButtonCustom/Pods-ImageRadioButtonCustom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageRadioButtonCustom/Pods-ImageRadioButtonCustom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageRadioButtonCustom/Pods-ImageRadioButtonCustom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92A48599656545419B504227 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageRadioButtonCustom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF60287A24DD3EAC00567084 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF60289824DD4A0300567084 /* VerticalAlignLabel.swift in Sources */,
 				FF60288624DD3EAC00567084 /* ViewController.swift in Sources */,
 				FF60288224DD3EAC00567084 /* AppDelegate.swift in Sources */,
+				FF60289624DD495D00567084 /* RadioButton.swift in Sources */,
 				FF60288424DD3EAC00567084 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +358,11 @@
 		};
 		FF60289324DD3EAE00567084 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F7811063FAE4A368808D3B /* Pods-ImageRadioButtonCustom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZX9TD66UC;
 				INFOPLIST_FILE = ImageRadioButtonCustom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +377,11 @@
 		};
 		FF60289424DD3EAE00567084 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D76662938CA30C9167BFED4 /* Pods-ImageRadioButtonCustom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZX9TD66UC;
 				INFOPLIST_FILE = ImageRadioButtonCustom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,116 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageRadioButtonCustom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvm-yf-3iJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQ6-2A-a5R">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oF9-MI-zdS">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIo-yz-3ow" customClass="RadioButton" customModule="ImageRadioButtonCustom" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="16" width="183" height="34"/>
+                                                        <state key="normal" title="이미지 버튼">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AW6-Ps-Fza" customClass="RadioButton" customModule="ImageRadioButtonCustom" customModuleProvider="target">
+                                                        <rect key="frame" x="215" y="16" width="183" height="34"/>
+                                                        <state key="normal" title="이미지 버튼">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="AW6-Ps-Fza" secondAttribute="trailing" constant="16" id="58k-ZN-nxa"/>
+                                                    <constraint firstItem="AW6-Ps-Fza" firstAttribute="width" secondItem="OIo-yz-3ow" secondAttribute="width" id="7pY-Gk-w5F"/>
+                                                    <constraint firstItem="AW6-Ps-Fza" firstAttribute="leading" secondItem="OIo-yz-3ow" secondAttribute="trailing" constant="16" id="8T5-MJ-vLA"/>
+                                                    <constraint firstItem="AW6-Ps-Fza" firstAttribute="top" secondItem="oF9-MI-zdS" secondAttribute="top" constant="16" id="lr7-kg-TF3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="OIo-yz-3ow" secondAttribute="bottom" constant="16" id="nq3-u5-lxR"/>
+                                                    <constraint firstItem="OIo-yz-3ow" firstAttribute="leading" secondItem="oF9-MI-zdS" secondAttribute="leading" constant="16" id="nud-oY-bzD"/>
+                                                    <constraint firstItem="OIo-yz-3ow" firstAttribute="top" secondItem="oF9-MI-zdS" secondAttribute="top" constant="16" id="pOQ-OZ-jGQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="AW6-Ps-Fza" secondAttribute="bottom" constant="16" id="tw5-Hh-CIJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iBK-Ap-vhQ">
+                                                <rect key="frame" x="0.0" y="66" width="414" height="66"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyn-u6-Ic3" customClass="RadioButton" customModule="ImageRadioButtonCustom" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="16" width="183" height="34"/>
+                                                        <state key="normal" title="이미지 버튼">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8t-Ig-8eN" customClass="RadioButton" customModule="ImageRadioButtonCustom" customModuleProvider="target">
+                                                        <rect key="frame" x="215" y="16" width="183" height="34"/>
+                                                        <state key="normal" title="이미지 버튼">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="I8t-Ig-8eN" firstAttribute="top" secondItem="iBK-Ap-vhQ" secondAttribute="top" constant="16" id="LqY-9a-d71"/>
+                                                    <constraint firstAttribute="trailing" secondItem="I8t-Ig-8eN" secondAttribute="trailing" constant="16" id="ae7-dg-2LN"/>
+                                                    <constraint firstItem="pyn-u6-Ic3" firstAttribute="top" secondItem="iBK-Ap-vhQ" secondAttribute="top" constant="16" id="bEO-K5-uRc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pyn-u6-Ic3" secondAttribute="bottom" constant="16" id="doG-0t-WBW"/>
+                                                    <constraint firstItem="pyn-u6-Ic3" firstAttribute="leading" secondItem="iBK-Ap-vhQ" secondAttribute="leading" constant="16" id="iyx-bH-uol"/>
+                                                    <constraint firstAttribute="bottom" secondItem="I8t-Ig-8eN" secondAttribute="bottom" constant="16" id="jbc-QA-tZH"/>
+                                                    <constraint firstItem="I8t-Ig-8eN" firstAttribute="leading" secondItem="pyn-u6-Ic3" secondAttribute="trailing" constant="16" id="tDr-Ux-jNf"/>
+                                                    <constraint firstItem="I8t-Ig-8eN" firstAttribute="width" secondItem="pyn-u6-Ic3" secondAttribute="width" id="tQQ-aR-1SC"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="iBK-Ap-vhQ" secondAttribute="trailing" id="2Sm-Pt-ZFz"/>
+                                            <constraint firstAttribute="trailing" secondItem="oF9-MI-zdS" secondAttribute="trailing" id="Co7-V9-7oV"/>
+                                            <constraint firstItem="oF9-MI-zdS" firstAttribute="top" secondItem="TQ6-2A-a5R" secondAttribute="top" id="D7s-yV-FuW"/>
+                                            <constraint firstItem="iBK-Ap-vhQ" firstAttribute="leading" secondItem="TQ6-2A-a5R" secondAttribute="leading" id="H3Z-d4-iSM"/>
+                                            <constraint firstItem="iBK-Ap-vhQ" firstAttribute="top" secondItem="oF9-MI-zdS" secondAttribute="bottom" id="a1r-z5-XKp"/>
+                                            <constraint firstItem="oF9-MI-zdS" firstAttribute="leading" secondItem="TQ6-2A-a5R" secondAttribute="leading" id="dPg-uz-084"/>
+                                            <constraint firstAttribute="bottom" secondItem="iBK-Ap-vhQ" secondAttribute="bottom" id="mNJ-Rf-39J"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TQ6-2A-a5R" firstAttribute="width" secondItem="xIi-va-zL3" secondAttribute="width" id="HWW-aJ-Atn"/>
+                                    <constraint firstItem="TQ6-2A-a5R" firstAttribute="trailing" secondItem="kDf-hQ-6G5" secondAttribute="trailing" id="LvW-TO-5cd"/>
+                                    <constraint firstItem="TQ6-2A-a5R" firstAttribute="bottom" secondItem="kDf-hQ-6G5" secondAttribute="bottom" id="cTD-t7-eAW"/>
+                                    <constraint firstItem="TQ6-2A-a5R" firstAttribute="leading" secondItem="kDf-hQ-6G5" secondAttribute="leading" id="gDj-2z-EOr"/>
+                                    <constraint firstItem="kDf-hQ-6G5" firstAttribute="top" secondItem="TQ6-2A-a5R" secondAttribute="top" id="yw8-d6-QsL"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="kDf-hQ-6G5"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="xIi-va-zL3"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rvm-yf-3iJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0WL-6c-saT"/>
+                            <constraint firstItem="rvm-yf-3iJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LqG-GO-CXk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rvm-yf-3iJ" secondAttribute="bottom" id="cQc-kZ-F1E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rvm-yf-3iJ" secondAttribute="trailing" id="sEJ-1G-GHP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btn1" destination="OIo-yz-3ow" id="kfh-xz-hGC"/>
+                        <outlet property="btn2" destination="AW6-Ps-Fza" id="fF6-gf-uIy"/>
+                        <outlet property="btn3" destination="pyn-u6-Ic3" id="WW3-Tp-3TI"/>
+                        <outlet property="btn4" destination="I8t-Ig-8eN" id="c2J-Ez-Ih7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
