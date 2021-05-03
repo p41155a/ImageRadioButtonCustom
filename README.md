@@ -1,6 +1,6 @@
 ###목차  
 [1.예제로 scrollView autolayout을 잡는법 / snapkit ](#예제-start)  
-[2.autoLayout의 기본 공식](#음수가-들어가는-걸까요)
+[2.autoLayout의 기본 공식](#autoLayout의-기본-공식)
 
 
 오늘은 저도 많이 사용하고 있는 SnapKit이라는 라이브러리에 대해 소개하고
@@ -189,7 +189,8 @@ autolayout과 다른 점은
 과 같이 -로 표현해야하는 것도 있다는 것입니다.
 
 ## 
-<br/>
+## autoLayout의 기본 공식
+
 
 > **💡왜 음수가 들어가는 걸까요?****
 
