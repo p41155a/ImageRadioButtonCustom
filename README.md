@@ -1,4 +1,7 @@
-[TOC]
+###목차
+[1.예제로 scrollView autolayout을 잡는법 / snapkit ](#예제-start!)
+[2.autoLayout의 기본 공식](#왜-음수가-들어가는-걸까요?)
+
 
 오늘은 저도 많이 사용하고 있는 SnapKit이라는 라이브러리에 대해 소개하고
 
@@ -28,7 +31,7 @@ stroyboard로 autolayout을 한다면 이런 식으로 설정할 수 있겠죠?
 
 <br/>
 
-## 예제
+## 예제 start!
 
 우선 형태 먼저 만들어 줄까요?
 
@@ -186,8 +189,7 @@ autolayout과 다른 점은
 과 같이 -로 표현해야하는 것도 있다는 것입니다.
 
 ## 
-
-## autoLayout의 기본 공식
+<br/>
 
 > **💡왜 음수가 들어가는 걸까요?****
 
